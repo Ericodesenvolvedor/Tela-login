@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(118, 117, 197);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container-interno {
+    width: 70%;
+    height: 70%;
+
+    background-color: white;
+    box-shadow: 1px 1px 10px rgba(3, 3, 3, 0.267);
+
+    position: relative;
+
+    display: flex;
+}
+
+#lado-esquerdo {
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+}
+
+#lado-esquerdo .login h1 {
+    margin-bottom: 15px;
+    color: #8d5527;
+    font-weight: 600;
+}
+
+#lado-esquerdo .formulario input {
+    margin-bottom: 10px;
+    width: 200px;
+    padding-left: 5px;
+    outline: none;
+    border: 1px solid black;
+}
+
+#lado-esquerdo .formulario label {
+    display: flex;
+    flex-direction: column;
+}
+
+#lado-esquerdo .button {
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+
+    display: flex;
+    justify-content: center;
+
+}
+
+#lado-esquerdo .button button {
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+
+    border: none;
+    border-radius: 6px;
+
+    font-size: 0.9em;
+    font-weight: 600;
+    color: white;
+    background-color:#8d5527;
+
+}
+
+/* ------------------------------Lado que possui a imagem -------------------------*/ 
+
+#lado-direito {
+    width: 50%;
+    height: 100%;
+
+    position: absolute;
+    left: 50%;
+
+    background-image: url(imagens/vintage-login.jpg);
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
